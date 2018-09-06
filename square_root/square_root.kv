@@ -1,0 +1,20 @@
+BoxLayout:
+    orientation: 'vertical'
+    TextInput:
+        id: input_number
+        text: '289'
+        font_size: 48
+        multiline: False
+        background_color: (2,2,2,2)
+        color:
+    Button:
+        background_color:(.2, .1, .73, 1)
+        color: (2, 2, 2, 2)
+        font_size: 30
+        text: 'Square Root'
+        # the following line specifies the function in the app class to call when the button is pressed
+        on_press: app.squaring(int(input_number.text))
+    Label:
+        id: output_label
+        font_size: 48
+        color: (0, 1, 0, 1)
